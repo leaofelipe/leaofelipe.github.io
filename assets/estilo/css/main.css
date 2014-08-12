@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('../fonts/inconsolata-regular-webfont.eot');
+    src: url('../fonts/inconsolata-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inconsolata-regular-webfont.woff') format('woff'),
+         url('../fonts/inconsolata-regular-webfont.ttf') format('truetype'),
+         url('../fonts/inconsolata-regular-webfont.svg#inconsolataregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('../fonts/inconsolata-bold-webfont.eot');
+    src: url('../fonts/inconsolata-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inconsolata-bold-webfont.woff') format('woff'),
+         url('../fonts/inconsolata-bold-webfont.ttf') format('truetype'),
+         url('../fonts/inconsolata-bold-webfont.svg#inconsolatabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+img {
+    border: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border-top: 2px solid #1b9af7;
+    font-family: 'inconsolataregular';
+    font-size: 1.1em;
+    text-align: center;
+    color: #333;
+
+}
+
+h1 {
+    font-size: 130%; 
+    padding-top: 150px;
+}
+
+h2 {
+    font-size: 110%;
+    font-weight: normal;
+}
+
+p {
+    line-height: 140%;
+}
+
+a {
+    text-decoration: none;
+    color: #1b9af7;
+}
+
+a:hover {
+    color: #0881bc;
+}
+
+.descricao a:hover {
+    text-decoration: underline;
+}
+
+.social a {
+    display: inline;
+    color: #333;
+    fill: #333;
+    padding: 0;
+}
+
+.social a:hover {
+    fill: #1b9af7;
+    color: #1b9af7;
+}
+
+.bloco-contato {
+    padding-top: 30px;
+}
+
+.contato {
+    border: 4px solid #1b9af7;
+    background: #1b9af7;
+    color: #FFF;
+    padding: 14px 26px;
+    font-size: 80%;
+    border-radius: 3px;
+}
+
+.contato:hover {
+    background: #FFF;
+    color: #1b9af7;
+}
