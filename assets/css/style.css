@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 2px solid #1b9af7;
+  font-family: 'Amiko', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  padding: 10px;
+}
+
+.LI-profile-badge, {
+  margin: 0 auto;
+}
+.github {
+  color: #24292e;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gh-activity {
+}
+
+.gh-activity li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.act-item {
+  padding: 10px 0;
+  color: #464646;
+}
+
+h2 {
+  color: #333;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+.act-item {
+  font-size: 12px;
+  display: table;
+}
+
+.act-item li {
+  border: none;
+}
+
+.act-item li:before {
+  content: "☑ ";
+}
+
+.act-item p {
+  font-size: 9px;
+  color: #a5a5a5;
+  padding: 0;
+  margin: 0;
+}
+
+.act-action span {
+  color: #005e93;
+  font-weight: bold;
+}
+
+.act-action a {
+  text-decoration: none;
+  color: #1989c7;
+  font-style: italic;
+}
+
+.act-img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+  display: table-cell;
+}
+
+.act-img img {
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+
+}
+
+.act-action {
+}
+
+.act-log {
+  font-size: 8px;
+  color: #999!important;
+}
+
+.footer {
+  clear: both;
+}
