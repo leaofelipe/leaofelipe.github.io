@@ -16,8 +16,8 @@ function addData (data) {
   var repo = data.repo
 
   var elm = document.createElement('p')
-  elm.innerHTML = `${formatedDate}: <span class="action">${event}</span> at
-  <a target="_blank" href="https://github.com/${repo.name}">${repo.name}</a>`
+  elm.innerHTML = formatedDate + ': <span class="action">' + event + '</span> at' +
+  '<a target="_blank" href="https://github.com/' + repo.name + '">' + repo.name + '</a>'
 
   fragment.appendChild(elm)
   act.appendChild(fragment)
