@@ -1,50 +1,34 @@
 'use strict'
 
+var act = document.querySelector('#act')
+var request = new XMLHttpRequest()
+var response
+var fragment = document.createDocumentFragment()
+var githubURL = 'https://api.github.com/users/leaofelipe/events?per_page=1'
 
-var act = document.querySelector('#act');
-var request = new XMLHttpRequest(),
-    response;
+function addData (data) {
+  var date = new Date(data.created_at)
+  var formatedDate = date.getFullYear() +
+  '.' + date.getMonth() +
+  '.' + date.getDate()
 
-var fragment = document.createDocumentFragment();
+  var event = data.type.split('Event')[0]
+  var repo = data.repo
 
-function getCommits(commits) {
-  var messages = [];
-  
-  if (!commits) return;
-  commits.map(function (commit) {
-    messages.push('<li>' + commit.message + '</li>');
-  })
+  var elm = document.createElement('p')
+  elm.innerHTML = `${formatedDate}: <span class="action">${event}</span> at
+  <a target="_blank" href="https://github.com/${repo.name}">${repo.name}</a>`
 
-  return messages;
-}
-
-function addData(data) {
-  var li = document.createElement('li')
-  if (data.payload.commits) {
-    var commits = getCommits(data.payload.commits).join('');
-  } else {
-    var commits = '';
-  }
-
-  li.innerHTML = '<div class="act-item">' +
-                  '<div class="act-img"><img width="100%" src="' + data.actor.avatar_url + '" /></div>' +
-                  '<div class="act-action"><span>' + data.type.split('Event')[0] + '</span> at ' +
-                  '<a href="https://github.com/' + data.repo.name + '" target="_blank">' + data.repo.name + '</a> <span class="act-log">[' + data.created_at + ']</span></div>' +
-                  '<ul class="act-commits">' + commits  + '</ul>' +
-                 '</div>'
-  fragment.appendChild(li);
+  fragment.appendChild(elm)
+  act.appendChild(fragment)
 }
 
 request.onreadystatechange = function () {
   if (request.status === 200) {
-    response = JSON.parse(request.responseText);
-    response.map(function (data) {
-      addData(data);
-    });
-    act.appendChild(fragment);
+    response = JSON.parse(request.responseText)
+    addData(response[0])
   }
-};
+}
 
-request.open('GET', 'https://api.github.com/users/leaofelipe/events', false);
-request.send();
-
+request.open('GET', githubURL, false)
+request.send()

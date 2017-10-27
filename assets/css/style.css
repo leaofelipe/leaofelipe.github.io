@@ -16,7 +16,7 @@ h1, h2 {
   top: 50%;
   left: 50%;
   margin-left: -250px;
-  margin-top: -100px;
+  margin-top: -220px;
   /* border: 1px solid red; */
   width: 500px;
   height: 300px;
@@ -34,6 +34,11 @@ h1, h2, p {
 a {
   text-decoration: none;
   color: #3C3C3C;
+}
+
+.main-box a:hover, .github-box a:hover {
+  text-decoration: underline;
+  color: #51FA98;
 }
 
 h1 {
