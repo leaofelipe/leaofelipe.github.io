@@ -45,6 +45,7 @@ h1 {
   font-size: 24px;
 }
 
+
 h1 span {
   background-color: #51FA98;
 }
@@ -145,3 +146,23 @@ ul li a {
 .box-links ul li a.medium {
   background: url(../img/medium.svg) no-repeat center center;
 }
+
+@media (max-width: 960px) {
+
+  .page {
+    top: 15%;
+    right: 0;
+    left: 5%;
+    bottom: 0;
+    margin: 0; 
+    position: absolute;
+    /* left: 50%; */
+    /* margin-left: -250px; */
+    /* margin-top: -220px; */
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 300px;
+    color: #3C3C3C;
+  }
+}
+
