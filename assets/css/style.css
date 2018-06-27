@@ -114,10 +114,14 @@ ul li a {
 
 .box-links {
   margin-top: 14px;
-  width: 100%;
 }
 
-.box-links ul {}
+.box-links ul {
+  width: 40%;
+  display: inline-block;
+  padding-top: 0;
+  margin-top: 0;
+}
 .box-links ul li {
   width: 32px;
   height: 32px;
@@ -145,6 +149,26 @@ ul li a {
 
 .box-links ul li a.medium {
   background: url(../img/medium.svg) no-repeat center center;
+}
+
+.blog-link {
+  float: right;
+    margin-top: 4px;
+  font-size: 18px;
+  margin-right: 2px;
+  text-transform: uppercase;
+}
+
+.blog-link a {
+    text-decoration: underline;
+    color: #63fb8a;
+    background: #3c3c3c;
+    padding: 5px 26px;
+}
+
+.blog-link a:hover {
+  color: #3c3c3c;
+  background: #63fb8a;
 }
 
 @media (max-width: 960px) {
