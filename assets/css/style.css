@@ -1,192 +1,78 @@
 body {
-  font-family: 'Dosis', arial, sans-serif;
+  font-family: monospace;
   box-sizing: border-box;
+  font-size: 1em;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-h1, h2 {
+h1 {
+  font-size: 1.3em;
   font-weight: normal;
+  margin-bottom: 4px;
 }
 
-.page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -250px;
-  margin-top: -220px;
-  /* border: 1px solid red; */
-  width: 500px;
-  height: 300px;
-  color: #3C3C3C;
-}
-
-.main-box {
-  padding: 10px 0;
-}
-
-h1, h2, p {
+h2 {
+  font-weight: normal;
+  font-size: 1.1em;
   margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: #3C3C3C;
+  color: #0000EE;
 }
 
-.main-box a:hover, .github-box a:hover {
-  text-decoration: underline;
-  color: #51FA98;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-
-h1 span {
-  background-color: #51FA98;
+.document-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 ul {
-  list-style: none; 
-  padding: 2px;
-  margin: 6px 0;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+  justify-content: center;
 }
 
 ul li {
-  display: inline-block;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
-ul li:first-child: {
-  padding-left: none;
-}
-
-ul li a {
-  color: #51FA98;
-  text-decoration: none;
-}
-
-.main-text {
-  font-size: 36px;
-  line-height: 38px;
-}
-
-.hashtag-box {
-  width: 100%;
-  background: #3C3C3C;
-}
-
-.github-box {
-  margin: 10px 0;
-  width: 100%;
-  border: 2px solid #3C3C3C;
-  padding: 2px 6px;
-  font-size: 20px;
-}
-
-.github-box p {
-  width: 99%;
+.img-container {
+  width: 250px;
   margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-  text-transform: lowercase;
 }
 
-.github-box p span.action {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 1.3em;
   font-weight: bold;
-  text-transform: uppercase;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
-.box-programming {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-  width: 100%;
+.blog-posts {
+  display: flex;
+  flex-direction: column;
 }
 
-.box-programming span {
-  color: #51FA98;
+.blog-posts ul {
+  display: block;
 }
 
-.box-links {
-  margin-top: 14px;
+main li {
+  font-size: 1.1em;
+  padding-bottom: 10px;
 }
-
-.box-links ul {
-  width: 40%;
-  display: inline-block;
-  padding-top: 0;
-  margin-top: 0;
-}
-.box-links ul li {
-  width: 32px;
-  height: 32px;
-  background: #3C3C3C;
-  border-radius: 50%;
-  margin-right: 5px;
-  overflow: hidden;
-  padding: 0;
-}
-
-.box-links ul li a {
-  display: inline-block;
-  width: 32px;
-  line-height: 32px;
-  text-indent: -9999px;
-}
-
-.box-links ul li a.github {
-  background: url(../img/github.svg) no-repeat center center;
-}
-
-.box-links ul li a.linkedin {
-  background: url(../img/linkedin.svg) no-repeat center center;
-}
-
-.box-links ul li a.medium {
-  background: url(../img/medium.svg) no-repeat center center;
-}
-
-.blog-link {
-  float: right;
-    margin-top: 4px;
-  font-size: 18px;
-  margin-right: 2px;
-  text-transform: uppercase;
-}
-
-.blog-link a {
-    text-decoration: underline;
-    color: #63fb8a;
-    background: #3c3c3c;
-    padding: 5px 26px;
-}
-
-.blog-link a:hover {
-  color: #3c3c3c;
-  background: #63fb8a;
-}
-
-@media (max-width: 960px) {
-
-  .page {
-    top: 15%;
-    right: 0;
-    left: 5%;
-    bottom: 0;
-    margin: 0; 
-    position: absolute;
-    /* left: 50%; */
-    /* margin-left: -250px; */
-    /* margin-top: -220px; */
-    /* border: 1px solid red; */
-    width: 90%;
-    height: 300px;
-    color: #3C3C3C;
-  }
-}
-
