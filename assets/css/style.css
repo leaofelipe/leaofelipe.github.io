@@ -49,14 +49,18 @@ ul li {
   margin: 0 auto;
 }
 
-main {
+.list-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main h1 {
+.list-content ul {
+  padding: 0;
+}
+
+.list-content h1 {
   font-size: 1.3em;
   font-weight: bold;
   border-top: 1px solid #000;
@@ -70,9 +74,10 @@ main h1 {
 
 .blog-posts ul {
   display: block;
+  text-align: center;
 }
 
-main li {
+.list-content ul li {
   font-size: 1.1em;
   padding-bottom: 10px;
 }
